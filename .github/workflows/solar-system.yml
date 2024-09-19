@@ -6,6 +6,11 @@ on:
     branches:
       - main
       - 'feature/*'
+
+env:
+  mango_url: 'mangodb+srv://supercluster.d83jj.mongodb.net/superData'
+  mangousername: ${{ vars.mangousername }}
+  mongopassword: ${{ vars.mangopassword }}
     
 jobs:
     unit-testing:
