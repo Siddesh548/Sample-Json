@@ -10,7 +10,7 @@ on:
 env:
   mango_url: 'mangodb+srv://supercluster.d83jj.mongodb.net/superData'
   mangousername: ${{ vars.mangousername }}
-  mongopassword: ${{ vars.mangopassword }}
+  mongopassword: ${{ secrets.mangopassword }}
     
 jobs:
     unit-testing:
