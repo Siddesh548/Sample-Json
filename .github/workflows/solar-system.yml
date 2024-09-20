@@ -8,9 +8,9 @@ on:
       - 'feature/*'
 
 env:
-  mango_uri: 'mongodb+srv://supercluster.d83jj.mongodb.net/superData'
-  mangousername: ${{ vars.mangousername }}
-  mongopassword: ${{ secrets.mangopassword }}
+  MONGO_URI: 'mongodb+srv://supercluster.d83jj.mongodb.net/superData'
+  manMONGO_USERNAME: ${{ vars.manMONGO_USERNAME }}
+  MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
     
 jobs:
     unit-testing:
