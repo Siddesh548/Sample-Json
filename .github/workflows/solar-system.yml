@@ -9,7 +9,7 @@ on:
 
 env:
   MONGO_URI: 'mongodb+srv://superuser:SuperPassword@supercluster-shard-0.d83jj.mongodb.net/superData?retryWrites=true&w=majority'
-  manMONGO_USERNAME: ${{ vars.manMONGO_USERNAME }}
+  MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
   MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
     
 jobs:
