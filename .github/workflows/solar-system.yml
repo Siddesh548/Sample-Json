@@ -88,19 +88,18 @@ jobs:
 
 
     docker:
-      needs: [unit-testing,code-coverage]
-      name: containerization
+      needs: [unit-testing, code-coverage]
+      name: Containerization
       runs-on: ubuntu-latest
       steps:
-        - name: checkout
-          uses: actions/checkout@v4
+       - name: Checkout Repository
+         uses: actions/checkout@v4
 
-        - name: dockerhub login
-          uses: docker/login-action@v2.2.0
-          with:
-            username: ${{ vars.DOCKERHUB_USERNAME }}
-            password: ${{ secrets.DOCKERHUB_PAASSWORD}}
-              
+       - name: Docker Hub Login (Corrected)
+         uses: docker/login-action@v2.2.0
+         with:
+           username: ${{ secrets.DOCKERHUB_USERNAME }}  # Use secrets for credentials
+           password: ${{ secrets.DOCKERHUB_PASSWORD }}  
 
             
             
