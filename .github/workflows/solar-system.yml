@@ -98,13 +98,8 @@ jobs:
        - name: Docker Hub Login (Corrected)
          uses: docker/login-action@v2.2.0
          with:
-<<<<<<< HEAD
            username: ${{ vars.DOCKERHUB_USERNAME }}  # Use secrets for credentials
            password: ${{ secrets.DOCKER_PASSWORD }}  
-=======
-           username: ${{ vars.DOCKERHUB_USERNAME }}  # Use secrets for credentials
-           password: ${{ secrets.DOCKER_PASSWORD }}  
->>>>>>> 798325224e35ea4589df0c830828a7b0de0fba81
 
             
             
